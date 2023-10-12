@@ -1,5 +1,6 @@
 package person;
 
+import person.models.Passport;
 import person.models.Phone;
 import person.models.Physical;
 import person.models.appearance.Appearance;
@@ -13,9 +14,10 @@ public class Person {
     private Physical phys;
     private Appearance appearance;
     private Phone phone;
+    private Passport passport;
 
     public Person(String id, String lastName, String firstName, String middleName,
-                  Physical phys, Appearance appearance, Phone phone) {
+                  Physical phys, Appearance appearance, Phone phone, Passport passport) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -23,6 +25,7 @@ public class Person {
         this.phys = phys;
         this.appearance = appearance;
         this.phone = phone;
+        this.passport = passport;
     }
 
     @Override
