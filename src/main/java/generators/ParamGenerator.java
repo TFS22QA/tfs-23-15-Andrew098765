@@ -42,12 +42,6 @@ public class ParamGenerator {
         return getLinesFromFile("middleNames_" + generateSex).get(getDigitsSum(inputCode % 100));
     }
 
-    /**
-     * по второй цифре кода:
-     * Возраст: 10..100
-     * Вес: 30..120
-     * Рост: 1..1,9
-     */
     public Physical generatePhysical(final int inputCode) {
         final int secondNumberOfCode = inputCode % 1000 / 100;
         int age = (secondNumberOfCode + 1) * 10;

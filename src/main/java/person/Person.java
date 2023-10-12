@@ -7,14 +7,17 @@ import person.models.appearance.Appearance;
 
 public class Person {
 
-    private String id;
-    private String lastName;
-    private String firstName;
-    private String middleName;
-    private Physical phys;
-    private Appearance appearance;
-    private Phone phone;
-    private Passport passport;
+    public String id;
+    public String lastName;
+    public String firstName;
+    public String middleName;
+    public Physical phys;
+    public Appearance appearance;
+    public Phone phone;
+    public Passport passport;
+
+    public Person() {
+    }
 
     public Person(String id, String lastName, String firstName, String middleName,
                   Physical phys, Appearance appearance, Phone phone, Passport passport) {
